@@ -1,0 +1,69 @@
+<div class="container">
+    <br><br>
+    <div class="toolbar">
+        <span style="font-size: 1.5em;">Resptrospective <i class='fas fa-pen' style="color: blue;"></i> </span>
+        <div class="spacer"></div>
+        <button mat-raised-button color="primary" class="buttons">Add another coloumn</button>
+        <button mat-raised-button color="warn" class="buttons" style="margin-left: 4px ;">Export pdf</button>
+
+
+    </div>
+    <br> <br> <br>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="text-center">
+                <h2> <b> What went well? </b><i class='fas fa-pen' style="color: blue;"></i> </h2>
+                <i class='fas fa-plus-circle iconplus mat-elevation-z5'></i> <br>
+            </div>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput class="textareaa">
+
+                </mat-form-field>
+            </form>
+            <div class="iconbox">
+                <a href="">
+                    <i class='fas fa-thumbs-up icons' style="color:rgb(214, 40, 66) ;"></i> </a>
+                <a href=""><i class='fas fa-pen icons' style="color: blue;"></i> </a>
+                <a (click)="openDialog('0ms', '0ms')"> <i class='fas fa-prescription-bottle icons' style="color:rgb(214, 40, 66) ;"></i> </a>
+                <!-- <button mat-raised-button (click)="openDialog('0ms','0ms')">Open dialog without animation</button> -->
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="text-center">
+                <h2> <b> What did not go  well? </b><i class=' fas fa-pen ' style="color: blue;"></i> </h2>
+                <i class='fas fa-plus-circle iconplus mat-elevation-z5'></i>
+            </div>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput class="textareaa">
+                </mat-form-field>
+            </form>
+            <div class="iconbox">
+                <a href="">
+                    <i class='fas fa-thumbs-up icons' style="color:rgb(214, 40, 66) ;"></i> </a>
+                <a href=""><i class='fas fa-pen icons' style="color: blue;"></i> </a>
+                <a (click)="openDialog('0ms', '0ms')"> <i class='fas fa-prescription-bottle icons' style="color:rgb(214, 40, 66) ;"></i> </a>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <h2> <b> Action items </b><i class='fas fa-pen ' style="color: blue;"></i> </h2>
+                <i class='fas fa-plus-circle iconplus mat-elevation-z5'></i>
+            </div>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput class="textareaa">
+                </mat-form-field>
+            </form>
+            <div class="iconbox">
+                <a href="">
+                    <i class='fas fa-thumbs-up icons' style="color:rgb(214, 40, 66) ;"></i> </a>
+                <a href=""><i class='fas fa-pen icons' style="color: blue;"></i> </a>
+                <a (click)="openDialog('0ms', '0ms')"> <i class='fas fa-prescription-bottle icons' style="color:rgb(214, 40, 66) ;"></i> </a>
+            </div>
+        </div>
+    </div>
+</div>

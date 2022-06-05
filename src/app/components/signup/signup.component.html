@@ -1,0 +1,58 @@
+<div class="body1">
+    <div class="text-center">
+        <br>
+        <h1 style="font-family:fantasy; font-size: 2.5em;">Sigile Retro</h1>
+        <h2>Agile made simple and fun</h2>
+        <form [formGroup]="SignupForm" class="centerbody mat-elevation-z5">
+            <!-- [formGroup]="SignupForm" -->
+            <div class="container">
+                <mat-form-field appearance="fill">
+                    <!-- <mat-label>Enter some input</mat-label> -->
+                    <label for="" style="font-weight: 500 ; font-size: 1.4em;"> Your Name  : </label>
+                    <input formControlName="name" matInput class="input"> <br> <br>
+
+                    <!-- </mat-form-field> <br>
+                <mat-form-field appearance="fill"> -->
+                    <label for="" style="font-weight: 500 ; font-size: 1.4em;"> Email Id : </label>
+                    <!-- <mat-label style="color: black;">Enter your email</mat-label> -->
+                    <input formControlName="email" matInput placeholder="pat@example.com" class="input">
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    <!-- </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill"> -->
+                    <!-- <mat-label>Enter your password</mat-label> --><br> <br>
+                    <label for="" style="font-weight: 500 ; font-size: 1.4em;"> Password : </label>
+                    <input formControlName="password" matInput [type]="hide ? 'password' : 'text'" class="input">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+                </mat-form-field>
+
+
+            </div>
+
+            <button mat-flat-button color="warn">SIGNUP</button>
+            <br> <br>
+            <div id="gSignInWrapper">
+                <span class="label">Signup with :</span> <br>
+                <div id="customBtn" class="customGPlusSignIn">
+                    <span id="icon1"></span>
+                    <span class="buttonText">Continue with Google</span>
+                </div>
+                <br>
+                <div id="customBtn" class="customGPlusSignIn">
+                    <span id="icon2"></span>
+                    <span class="buttonText"> Continue with Facebook</span>
+                </div>
+                <br>
+                <div id="customBtn" class="customGPlusSignIn">
+                    <span id="icon3"></span>
+                    <span class="buttonText"> Continue with Microsoft</span>
+                </div>
+                <br> <br>
+            </div>
+        </form>
+
+    </div>
+
+</div>

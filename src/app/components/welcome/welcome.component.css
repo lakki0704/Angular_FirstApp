@@ -1,0 +1,61 @@
+.buttons {
+    /* display: inline-block; */
+    /* margin-right: 0; */
+    border-radius: 2em;
+}
+
+.spacer {
+    flex: 3;
+}
+
+.toolbar {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    color: rgb(16, 0, 0);
+    font-weight: 600;
+}
+
+.iconplus {
+    border-radius: 3.5em;
+    background-color: blue;
+    color: white;
+    font-size: 1.4em;
+    padding: 3px;
+}
+
+
+/* .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+} */
+
+.textareaa {
+    /* border-style: none; */
+    border-color: antiquewhite;
+    border-bottom: rgb(152, 150, 150);
+    border-style: solid;
+    width: 400px;
+    height: 60px;
+    margin: auto;
+}
+
+.iconbox {
+    display: flex;
+    margin-left: 320px;
+    position: absolute;
+}
+
+.icons {
+    padding: 0 7px;
+    font-size: 1.23em;
+}

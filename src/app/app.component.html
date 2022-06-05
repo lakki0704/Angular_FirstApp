@@ -1,0 +1,71 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+    .spacer {
+        flex: 1;
+    }
+    
+    .toolbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        background-color: #1d5897;
+        color: white;
+        font-weight: 600;
+    }
+    
+    a,
+    a:visited,
+    a:hover {
+        color: #1976d2;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #125699;
+    }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <!-- <img width="40" alt="R" src="" /> -->
+    <a routerLink="/welcome" style="color: white; margin-left: 29px;">
+        <i class='fas fa-bars' style='font-size:24px'></i>
+    </a>
+    <div class="spacer"></div>
+    <a routerLink="/login">
+        <button mat-raised-button class="buttons">Login</button> </a>
+    <a routerLink="/signup">
+        <button mat-raised-button class="buttons" style="margin: 10px;">Sign up</button> </a>
+    <br><br>
+</div>
+<br><br> <br>
+<router-outlet></router-outlet>
+<div>
+    <!-- Footer -->
+    <footer>
+
+
+    </footer>
+
+
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
